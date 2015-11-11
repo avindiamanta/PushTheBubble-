@@ -20,7 +20,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9fF-ra-OZx" customClass="PushTheButton" customModule="PushTheBubble" customModuleProvider="target">
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9fF-ra-OZx" customClass="PushTheButton" customModule="PushTheBubble" customModuleProvider="target">
                                 <rect key="frame" x="275" y="503" width="51" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="51" id="mUm-J9-ZD3"/>
@@ -34,7 +34,7 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hV9-gJ-7jh" customClass="PushTheButton" customModule="PushTheBubble" customModuleProvider="target">
-                                <rect key="frame" x="466" y="503" width="51" height="50"/>
+                                <rect key="frame" x="602" y="503" width="51" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="51" id="HgP-xo-VL5"/>
                                     <constraint firstAttribute="height" constant="50" id="R7A-KC-blK"/>
@@ -47,7 +47,7 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E0q-En-FsO" customClass="PushTheButton" customModule="PushTheBubble" customModuleProvider="target">
-                                <rect key="frame" x="88" y="503" width="51" height="50"/>
+                                <rect key="frame" x="-48" y="503" width="51" height="79"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="I7F-IW-E5O"/>
                                     <constraint firstAttribute="width" constant="51" id="ygj-Ra-hxD"/>
@@ -76,15 +76,16 @@
                             <constraint firstItem="9fF-ra-OZx" firstAttribute="baseline" secondItem="hV9-gJ-7jh" secondAttribute="baseline" id="0zf-X6-HfO"/>
                             <constraint firstItem="E0q-En-FsO" firstAttribute="baseline" secondItem="9fF-ra-OZx" secondAttribute="firstBaseline" id="5aq-AZ-DHl"/>
                             <constraint firstItem="9fF-ra-OZx" firstAttribute="centerX" secondItem="3tT-V5-3Bp" secondAttribute="centerX" id="6dT-cj-5gh"/>
-                            <constraint firstItem="E0q-En-FsO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="68" id="BWc-QB-d9L"/>
+                            <constraint firstItem="E0q-En-FsO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-68" id="BWc-QB-d9L"/>
                             <constraint firstItem="9fF-ra-OZx" firstAttribute="top" secondItem="hV9-gJ-7jh" secondAttribute="top" id="Dcq-RV-C3t"/>
                             <constraint firstItem="3tT-V5-3Bp" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="174" id="KeV-5O-gaD"/>
                             <constraint firstItem="9fF-ra-OZx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RMO-vv-v47"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="9fF-ra-OZx" secondAttribute="bottom" constant="47" id="ZlA-Jv-vsy"/>
                             <constraint firstItem="9fF-ra-OZx" firstAttribute="baseline" secondItem="hV9-gJ-7jh" secondAttribute="firstBaseline" id="as8-M8-uCK"/>
                             <constraint firstItem="9fF-ra-OZx" firstAttribute="baseline" secondItem="E0q-En-FsO" secondAttribute="firstBaseline" id="gNU-gY-HWV"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="E0q-En-FsO" secondAttribute="bottom" constant="47" id="j7S-Ge-uID"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="E0q-En-FsO" secondAttribute="bottom" constant="47" id="jAg-KK-f1o"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="hV9-gJ-7jh" secondAttribute="trailing" constant="63" id="jhz-7m-75d"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="E0q-En-FsO" secondAttribute="bottom" constant="18" id="jAg-KK-f1o"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hV9-gJ-7jh" secondAttribute="trailing" constant="-73" id="jhz-7m-75d"/>
                             <constraint firstAttribute="trailingMargin" secondItem="E0q-En-FsO" secondAttribute="trailing" constant="441" id="qZD-af-bBH"/>
                             <constraint firstItem="E0q-En-FsO" firstAttribute="top" secondItem="9fF-ra-OZx" secondAttribute="top" id="vEw-2h-h3d"/>
                             <constraint firstItem="E0q-En-FsO" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="483" id="xRn-CY-ITF"/>
@@ -96,6 +97,7 @@
                         </userDefinedRuntimeAttributes>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="ZlA-Jv-vsy"/>
                                 <exclude reference="j7S-Ge-uID"/>
                             </mask>
                         </variation>
@@ -106,6 +108,7 @@
                         <outlet property="bottom" destination="jAg-KK-f1o" id="ZmE-1m-uu2"/>
                         <outlet property="buttonOne" destination="E0q-En-FsO" id="LkE-yQ-QjG"/>
                         <outlet property="leading" destination="BWc-QB-d9L" id="5V1-Wf-6lG"/>
+                        <outlet property="redButton" destination="9fF-ra-OZx" id="OM0-nn-ICl"/>
                         <outlet property="top" destination="xRn-CY-ITF" id="vSL-KP-6Nm"/>
                         <outlet property="trailing" destination="qZD-af-bBH" id="T9Y-9s-fid"/>
                     </connections>
