@@ -14,6 +14,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var trailing: NSLayoutConstraint!
     @IBOutlet weak var bottom: NSLayoutConstraint!
     @IBOutlet weak var top: NSLayoutConstraint!
+    @IBOutlet weak var blueTotheRight: NSLayoutConstraint!
+    @IBOutlet weak var blueButton: PushTheButton!
     
     @IBOutlet weak var buttonOne: PushTheButton!
     
@@ -30,9 +32,11 @@ class ViewController: UIViewController {
         }), completion: nil)*/
         
         UIView.animateWithDuration(2.0, animations: ({
-        
-            self.top.constant = 600
-            self.bottom.constant = -16
+            self.blueButton.alpha = 0 // to make object disappear 
+            //self.top.constant = 600
+            //self.bottom.constant = -16
+            self.blueTotheRight.constant = -63
+            
             
             // This is important to affect animation
             self.view.layoutIfNeeded()
